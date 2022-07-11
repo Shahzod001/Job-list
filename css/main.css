@@ -1,0 +1,273 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+:root{
+    --font500: 500;
+    --font700: 700;
+}
+/* league-spartan-500 - latin */
+@font-face {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 500;
+    src:
+         url("../fonts/league-spartan-v5-latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("../fonts/league-spartan-v5-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* league-spartan-700 - latin */
+  @font-face {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 700;
+    src:
+         url("../fonts/league-spartan-v5-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("../fonts/league-spartan-v5-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    font-family: "League-spartan", 'Arial', sans-serif;
+}
+.container{
+    width: 1130px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+section{
+    margin-right: auto;
+    margin-left: auto;
+    width: 1366px;
+    background: #EFFAFA;
+    padding-bottom: 120px;
+}
+section::before{
+    content: "";
+    display: block;
+    background-image: url("../photos/header-img.svg");
+    Width: 1366px;
+    height: 156px;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 76px;
+}
+.item {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+            box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    border-radius: 5px;
+    padding: 32px 40px;
+    margin-bottom: 24px;
+    border-left: 5px solid #fff;
+}
+/* .item:nth-child(1){
+    border-left: 5px solid #5CA5A5;
+}
+.item:nth-child(2){
+    border-left: 5px solid #5CA5A5;
+} */
+
+.item:hover{
+    border-left: 5px solid #5CA5A5;
+}
+.item:nth-child(10){
+    margin-bottom: 0;
+}
+.parent-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.child{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.img-logo {
+    margin-right: 24px;
+    width: 88px;
+    height: 88px;
+}
+.child-box {
+}
+.child-top-box {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 8px;
+}
+.text-top {
+    margin: 0;
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5CA5A5;
+}
+.span {
+    margin-right: 8px;
+    padding: 6px 8px;
+    background: #5CA5A5;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -0.0846154px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.span-second {
+    padding: 6px 8px;
+    background: #2B3939;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.0846154px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.heading {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2B3939;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.heading:hover{
+    color: #5CA5A5;
+}
+.child-bottom-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+time{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.115385px;
+    color: #7C8F8F;
+}
+.text-time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #7C8F8F;
+}
+.text-time::before{
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background: #b7c4c4;
+    content: "";
+    border-radius: 50%;
+    margin: 0px 16px;
+}
+.country {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.115385px;
+    color: #7C8F8F;
+}
+.country::before{
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background: #b7c4c4;
+    content: "";
+    border-radius: 50%;
+    margin: 0px 16px;
+}
+.list-lang {
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.item-lang {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #5CA5A5;
+    background-color: #EFF7F7;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-left: 16px;
+}
+.item-lang:hover{
+    background: #5CA5A5;
+    color: #fff;
+}
+.btn-box {
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+button{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #5CA5A5;
+    background-color: #EFF7F7;
+    mix-blend-mode: normal;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-left: 16px;
+    border-color: transparent;
+}
+button:hover{
+    background: #5CA5A5;
+    color: #fff;
+}
+button:nth-child(1){
+    margin-left: 0;
+}
